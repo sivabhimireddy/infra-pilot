@@ -33,6 +33,7 @@ infra-pilot/
 ├── docs_output/              # Markdown docs (generated)
 ├── embed_terraform.py        # Script to re-embed .tf files
 ├── requirements.txt
+├── setup.sh                  # Quick start setup script
 └── README.md
 ```
 
@@ -55,33 +56,28 @@ infra-pilot/
 
 ## 🛠️ Setup Instructions
 
-### 1. Install requirements
+### 1. Run the Setup Script
 
 ```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+This will:
+
+* Create a virtual environment
+* Install all dependencies
+* Prompt you to run embedding and start the app
+
+### 2. Or Follow Manual Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-### 2. Start Ollama with LLaMA
-
-```bash
 ollama run llama3
-```
-
-### 3. Embed your Terraform code
-
-```bash
 python embed_terraform.py
-```
-
-### 4. Run the FastAPI backend
-
-```bash
 uvicorn app.main:app --reload
-```
-
-### 5. Launch the Streamlit UI
-
-```bash
 streamlit run app/ui/app.py
 ```
 
@@ -121,7 +117,8 @@ docs_output/infra-doc-YYYYMMDD-HHMMSS.md
 * 🧪 Test mode for mocking plan/apply
 * 🗃️ Auto-export docs to GitHub/Confluence
 
----
+
+
 
 ## 🤝 Contributing
 

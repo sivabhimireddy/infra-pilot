@@ -1,2 +1,27 @@
+# Core LangGraph & LangChain
+langgraph>=0.0.37
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.1.50
+
+# Embeddings & Vectorstore
+sentence-transformers
+chromadb>=0.4.24
+
+# Ollama local LLM
+langchain-ollama
+ollama  # optional for documentation
+
+# Streamlit UI
+streamlit
+
+# FastAPI backend
 fastapi
 uvicorn
+
+# Prompt templating (optional but used in agent)
+jinja2
+
+# Utilities
+requests
+python-dotenv
