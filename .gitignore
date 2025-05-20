@@ -1,0 +1,35 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+*.sqlite3
+*.env
+.env*
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# MacOS & system files
+.DS_Store
+
+# Chroma vector DB store
+chroma_store/
+
+# Terraform state (if any gets added)
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Docs output (optional: only if you don’t want to commit generated files)
+docs_output/
+
+# Ollama cache (if used in future)
+ollama_models/
