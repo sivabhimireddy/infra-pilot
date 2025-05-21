@@ -109,7 +109,7 @@ docs_output/infra-doc-YYYYMMDD-HHMMSS.md
 
 ---
 
-## 🧱 Roadmap Ideas
+## Roadmap Ideas
 
 *  Slack bot interface: `/ask-infra`
 *  Drift detection with AWS SDK / TF state
