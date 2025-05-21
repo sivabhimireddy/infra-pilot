@@ -1,6 +1,5 @@
 from fastapi import APIRouter
 from app.agents.infra_agent import build_agent
-
 import os
 from datetime import datetime
 
@@ -21,4 +20,4 @@ def generate_docs():
     with open(output_path, "w") as f:
         f.write(doc_text)
 
-    return {"status": "✅ Docs generated", "file": output_path}
+    return {"status": "Docs generated", "file": output_path}

@@ -31,7 +31,7 @@ def load_and_embed_terraform(folder_path="infra"):
     return vectorstore
 
 
-# ✅ New function for LangGraph agent
+# New function for LangGraph agent
 def load_code_context(folder_path="infra", top_k=5):
     """
     Load top-k most relevant chunks from ChromaDB without a question.

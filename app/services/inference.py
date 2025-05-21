@@ -1,5 +1,3 @@
-# app/services/inference.py
-
 from app.agents.infra_agent import build_agent
 
 def get_infra_answer(question: str) -> str:
@@ -18,4 +16,4 @@ def get_infra_answer(question: str) -> str:
         return result["answer"]
 
     except Exception as e:
-        return f"⚠️ Failed to generate answer: {str(e)}"
+        return f" Failed to generate answer: {str(e)}"

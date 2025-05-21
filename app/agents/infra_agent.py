@@ -1,11 +1,9 @@
-# app/agents/infra_agent.py
 
 from langgraph.graph import StateGraph
 from langchain_core.runnables import RunnableLambda
 from langchain_core.messages import HumanMessage
 from langchain.chat_models import ChatOllama
 from typing import TypedDict
-
 from app.services.embedding import load_code_context
 from app.services.parse_tfvars import parse_variables_tf
 
@@ -34,7 +32,7 @@ def generate_response(state: AgentState) -> AgentState:
         user_query=state["question"]
     )
 
-    print("\n🧠 ----- FILLED PROMPT SENT TO LLaMA -----\n")
+    print("\n----- FILLED PROMPT SENT TO LLaMA -----\n")
     print(filled_prompt)
     print("\n------------------------------------------\n")
 
